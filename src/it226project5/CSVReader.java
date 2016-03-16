@@ -17,7 +17,7 @@ public class CSVReader {
 
   public void run() {
 
-	String csvFile = "/Users/nicholasmessina/Desktop/IT 226/it226 data integration/src/it226project5/380-fall-2002.csv";
+	String csvFile = "380-fall-2002.csv";
 	BufferedReader br = null;
 	String line = "";
 	
