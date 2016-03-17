@@ -194,6 +194,17 @@ public class Ian {
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
+                    grade[0] = a;
+                    grade[1] = b;
+                    grade[2] = c;
+                    grade[3] = d;
+                    grade[4] = f;
+
+                    System.out.println("A: " + grade[0]);
+                    System.out.println("B: " + grade[1]);
+                    System.out.println("C: " + grade[2]);
+                    System.out.println("D: " + grade[3]);
+                    System.out.println("F: " + grade[4]);
                 } else if (chooseProcess[0].equalsIgnoreCase("none") && !chooseProcess[1].equalsIgnoreCase("none")
                         && !chooseProcess[2].equalsIgnoreCase("none")) { //grades for just semester/year
                     File file = new File(".");
@@ -261,6 +272,17 @@ public class Ian {
                         gradeLine.clear();
                         firstLine = true;
                     }
+                    grade[0] = a;
+                    grade[1] = b;
+                    grade[2] = c;
+                    grade[3] = d;
+                    grade[4] = f;
+
+                    System.out.println("A: " + grade[0]);
+                    System.out.println("B: " + grade[1]);
+                    System.out.println("C: " + grade[2]);
+                    System.out.println("D: " + grade[3]);
+                    System.out.println("F: " + grade[4]);
                 } else if ((!chooseProcess[0].equalsIgnoreCase("none") && chooseProcess[1].equalsIgnoreCase("none")
                         && chooseProcess[2].equalsIgnoreCase("none")) || (!chooseProcess[0].equalsIgnoreCase("none")
                         && !chooseProcess[1].equalsIgnoreCase("none") && chooseProcess[2].equalsIgnoreCase("none"))
@@ -331,18 +353,18 @@ public class Ian {
                         gradeLine.clear();
                         firstLine = true;
                     }
-                }
-                grade[0] = a;
-                grade[1] = b;
-                grade[2] = c;
-                grade[3] = d;
-                grade[4] = f;
+                    grade[0] = a;
+                    grade[1] = b;
+                    grade[2] = c;
+                    grade[3] = d;
+                    grade[4] = f;
 
-                System.out.println("A: " + grade[0]);
-                System.out.println("B: " + grade[1]);
-                System.out.println("C: " + grade[2]);
-                System.out.println("D: " + grade[3]);
-                System.out.println("F: " + grade[4]);
+                    System.out.println("A: " + grade[0]);
+                    System.out.println("B: " + grade[1]);
+                    System.out.println("C: " + grade[2]);
+                    System.out.println("D: " + grade[3]);
+                    System.out.println("F: " + grade[4]);
+                }
             }
         }
     }
