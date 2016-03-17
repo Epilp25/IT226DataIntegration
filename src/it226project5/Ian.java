@@ -12,7 +12,7 @@ public class Ian {
 
     public static void main(String[] args) {
 
-        daniel obj = new daniel();
+        Ian obj = new Ian();
         obj.run();
 
     }
@@ -149,7 +149,7 @@ public class Ian {
                 chooseProcess[2] = menuSelection.nextLine();
 
                 if (!chooseProcess[0].equalsIgnoreCase("none") && !chooseProcess[1].equalsIgnoreCase("none")
-                        && !chooseProcess[2].equalsIgnoreCase("none")) {
+                        && !chooseProcess[2].equalsIgnoreCase("none")) { //grades for a course of a specific semester/year
                     String csvFile = chooseProcess[0] + "-" + chooseProcess[1] + "-" + chooseProcess[2] + ".csv";
                     try {
 
@@ -195,7 +195,7 @@ public class Ian {
                         e.printStackTrace();
                     }
                 } else if (chooseProcess[0].equalsIgnoreCase("none") && !chooseProcess[1].equalsIgnoreCase("none")
-                        && !chooseProcess[2].equalsIgnoreCase("none")) {
+                        && !chooseProcess[2].equalsIgnoreCase("none")) { //grades for just semester/year
                     File file = new File(".");
                     ArrayList<File> fileAL = new ArrayList<>();
                     for (int j = 0; j < file.listFiles().length - 1; j++) {
@@ -265,7 +265,7 @@ public class Ian {
                         && chooseProcess[2].equalsIgnoreCase("none")) || (!chooseProcess[0].equalsIgnoreCase("none")
                         && !chooseProcess[1].equalsIgnoreCase("none") && chooseProcess[2].equalsIgnoreCase("none"))
                         || (!chooseProcess[0].equalsIgnoreCase("none") && chooseProcess[1].equalsIgnoreCase("none")
-                        && !chooseProcess[2].equalsIgnoreCase("none"))) {
+                        && !chooseProcess[2].equalsIgnoreCase("none"))) { // grades for just courses
                     File file = new File(".");
                     ArrayList<File> fileAL = new ArrayList<>();
                     for (int j = 0; j < file.listFiles().length - 1; j++) {
